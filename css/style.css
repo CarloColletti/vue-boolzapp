@@ -1,6 +1,59 @@
+/* debug */
+[class^="col"] {
+    border: 1px solid red;
+}
+
+[class^="row"] {
+    border: 1px solid green;
+}
+
+[class^="container"] {
+    border: 1px solid black;
+}
+
 /* color background split green and white */
 body {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to top, rgba(217, 219, 211, 1) 90%, rgba(0, 150, 136, 1) 50%);
+    background: linear-gradient(to top, rgba(217, 219, 211, 1) 85%, rgba(0, 150, 136, 1) 50%);
+}
+
+/* grandezza della web app  */
+.app-container {
+    height: 90vh;
+}
+
+/* altezza delle colonne */
+.h-100 {
+    height: 100%;
+}
+
+/* altezza sezione avatar e contatto chat */
+.h-alt {
+    height: 80px;
+}
+
+.h-bell {
+    height: 100px;
+}
+
+/* avatar impostazioni  */
+.bg-personal-avatar {
+    background-color: #eaeaea;
+}
+
+.avatar-img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* controll-chat */
+.controls-chat {
+    line-height: 80px;
+}
+
+.controls-chat i {
+    margin: 0 15px 0 15px;
+    color: #b1b1b1;
+    font-size: 1.6rem;
 }
