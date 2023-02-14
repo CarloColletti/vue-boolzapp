@@ -38,7 +38,7 @@
                 <!-- user e contatti  -->
                 <div class="col-5 p-0">
                     <!-- section user  -->
-                    <section class="bg-personal-avatar p-2 d-flex justify-content-between">
+                    <section class="bg-personal p-2 d-flex justify-content-between">
                         <div class="avatar h-alt">
                             <img src="./img/avatar_io.jpg" class="avatar-img" alt="#">
                             <span>Sofia</span>
@@ -51,13 +51,71 @@
                     </section>
 
                     <!-- section allert desktop  -->
-                    <section class="bg-personal-desktop h-bell p-3 d-flex lh-base">
-                        <div class="bell mt-2">
+                    <section class="bg-personal-desktop h-bell d-flex">
+                        <div class="bell m-3">
                             <i class="fa-solid fa-bell-slash"></i>
                         </div>
-                        <div class="notifications-text px-3 my-0">
+                        <div class="notifications-text m-2">
                             <h4>Ricevi notifiche e messaggi</h4>
                             <a href="#">Attiva notifiche desktop</a>
+                        </div>
+                    </section>
+
+                    <!-- section search -->
+                    <section class="bg-personal px-3">
+                        <div class="input-group py-2">
+                            <button class="btn btn-light" type="button" id="button-addon1">
+                                <i class="fa-solid fa-magnifying-glass px-3"></i>
+                            </button>
+                            <input type="text" class="form-control" placeholder="Cerca e inizia una nuova chat"
+                                aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        </div>
+                    </section>
+
+                    <!-- section messaggi  -->
+                    <section class="message text-overflow ">
+                        <div class="p-2 d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="avatar w-15">
+                                    <img src="./img/avatar_io.jpg" class="img-fluid img-chat" alt="#">
+                                </div>
+                                <div class="px-3">
+                                    <h3>
+                                        Sofia
+                                    </h3>
+                                    <div class="text-secondary">
+                                        Ultimo Messaggio inviato
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-secondary h-alt">
+                                <span>12.00</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+                <div class="col-7 p-0">
+                    <!-- section chat-img  -->
+                    <section class="bg-personal p-2 d-flex justify-content-between">
+                        <div class="avatar h-alt d-flex">
+                            <div class="avatar">
+                                <img src="./img/avatar_io.jpg" class="img-fluid img-chat chat-avatar-img" alt="#">
+                            </div>
+                            <div class="px-3">
+                                <h3 class="m-0 fs-4">
+                                    Sofia
+                                </h3>
+                                <div class="text-secondary fs-6">
+                                    Ultimo Messaggio inviato
+                                </div>
+                            </div>
+                        </div>
+                        <div class="controls-chat h-alt">
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </section>
                 </div>

@@ -3,13 +3,29 @@
     border: 1px solid red;
 }
 
-[class^="row"] {
+section {
     border: 1px solid green;
 }
 
 [class^="container"] {
     border: 1px solid black;
 }
+
+/******************************************************** utilites ********************************************************/
+
+.w-15 {
+    width: 15%;
+}
+
+/* personal fonts  */
+.personal-font-h {
+    font-size: 0.4rem;
+}
+
+.personal-font-access {
+    font-size: 1rem;
+}
+
 
 /**************************************** personal color background ****************************************/
 /* background color splitted  */
@@ -19,8 +35,13 @@ body {
     background: linear-gradient(to top, rgba(217, 219, 211, 1) 85%, rgba(0, 150, 136, 1) 50%);
 }
 
-/* chat and avatar background  */
-.bg-personal-avatar {
+/* default color backgrond app  */
+.app-container {
+    background-color: white;
+}
+
+/* chat, avatar and search background  */
+.bg-personal {
     background-color: #eaeaea;
 }
 
@@ -42,12 +63,12 @@ body {
 
 /* altezza sezione avatar e contatto chat */
 .h-alt {
-    height: 80px;
+    height: 60px;
 }
 
 /* altezza per contenitore del'allert per desktop  */
 .h-bell {
-    height: 100px;
+    height: 80px;
 }
 
 /********************************************* avatar impostazioni  *********************************************/
@@ -59,7 +80,7 @@ body {
 
 /* controll-chat */
 .controls-chat {
-    line-height: 80px;
+    line-height: 60px;
 }
 
 /* padding e colore simboli  */
@@ -83,4 +104,21 @@ body {
     font-size: 1.2rem;
 }
 
-.notifications-text {}
+/*************************************************** chat impostazioni ***************************************************/
+
+/* avatar immagine chat  */
+.img-chat {
+    border-radius: 50%;
+}
+
+/* text overflow */
+.text-overflow {
+    height: calc(90vh - 214px);
+    overflow: auto;
+}
+
+/***************************************************** section chat open  *****************************************************/
+
+.chat-avatar-img {
+    width: 60px;
+}
