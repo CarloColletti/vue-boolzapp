@@ -1,0 +1,6 @@
+/* color background split green and white */
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(217, 219, 211, 1) 90%, rgba(0, 150, 136, 1) 50%);
+}
