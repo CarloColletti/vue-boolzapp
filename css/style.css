@@ -1,4 +1,4 @@
-/* debug */
+/******************************************************* debug *******************************************************/
 [class^="col"] {
     border: 1px solid red;
 }
@@ -11,13 +11,25 @@
     border: 1px solid black;
 }
 
-/* color background split green and white */
+/**************************************** personal color background ****************************************/
+/* background color splitted  */
 body {
     width: 100%;
     height: 100vh;
     background: linear-gradient(to top, rgba(217, 219, 211, 1) 85%, rgba(0, 150, 136, 1) 50%);
 }
 
+/* chat and avatar background  */
+.bg-personal-avatar {
+    background-color: #eaeaea;
+}
+
+/* allert desktop */
+.bg-personal-desktop {
+    background-color: #8edafc;
+}
+
+/****************************************** altezze personalizzate ******************************************/
 /* grandezza della web app  */
 .app-container {
     height: 90vh;
@@ -33,14 +45,12 @@ body {
     height: 80px;
 }
 
+/* altezza per contenitore del'allert per desktop  */
 .h-bell {
     height: 100px;
 }
 
-/* avatar impostazioni  */
-.bg-personal-avatar {
-    background-color: #eaeaea;
-}
+/********************************************* avatar impostazioni  *********************************************/
 
 .avatar-img {
     height: 100%;
@@ -52,8 +62,25 @@ body {
     line-height: 80px;
 }
 
+/* padding e colore simboli  */
 .controls-chat i {
     margin: 0 15px 0 15px;
     color: #b1b1b1;
     font-size: 1.6rem;
 }
+
+/************************************************* allert impostazioni *************************************************/
+
+.bell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    color: #8edafc;
+    font-size: 1.2rem;
+}
+
+.notifications-text {}
