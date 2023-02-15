@@ -75,7 +75,7 @@
                     <!-- section messaggi-list-chat  -->
                     <section class="message-list text-overflow">
                         <div class="p-2 d-flex justify-content-between border-bottom"
-                            v-for="(contact, index) in contacts">
+                            v-for="(contact, index) in contacts" @click="openChat(index)">
                             <div class="d-flex">
                                 <div class="avatar w-15">
                                     <img :src="'../img/avatar'+(contact.avatar)+'.jpg'" class="img-fluid img-chat"
@@ -125,10 +125,9 @@
                     <!-- section chat-open  -->
                     <section>
                         <div class=" chat-open p-4 d-flex flex-column ov">
-                            <div v-for="message in contacts[0].messages" class="sent">
+                            <div v-for="message in contacts[activeChat].messages" :class="message.status">
                                 {{message.text_mess}}
                             </div>
-                            <div class="sent">dfdf</div>
                         </div>
                     </section>
 

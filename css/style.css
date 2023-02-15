@@ -126,6 +126,10 @@ body {
     width: 60px;
 }
 
+.avatar.active {
+    background-color: #e9ebeb;
+}
+
 /***************************************************** section chat open  *****************************************************/
 .chat-open {
     background-image: url(../img/mine.jpg);
@@ -141,7 +145,7 @@ body {
     align-self: flex-end;
 }
 
-.recived {
+.received {
     margin: 3px 0;
     width: 40%;
     background-color: #fff;
