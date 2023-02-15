@@ -1,5 +1,5 @@
 /******************************************************* debug *******************************************************/
-[class^="col"] {
+/* [class^="col"] {
     border: 1px solid red;
 }
 
@@ -7,9 +7,10 @@ section {
     border: 1px solid green;
 }
 
-[class^="container"] {
+[class^="ddd"] {
     border: 1px solid black;
-}
+} */
+
 
 /******************************************************** utilites ********************************************************/
 
@@ -43,6 +44,10 @@ body {
 /* chat, avatar and search background  */
 .bg-personal {
     background-color: #eaeaea;
+}
+
+.bg-enter-message {
+    background-color: #f3eeea;
 }
 
 /* allert desktop */
@@ -117,8 +122,50 @@ body {
     overflow: auto;
 }
 
-/***************************************************** section chat open  *****************************************************/
-
 .chat-avatar-img {
     width: 60px;
+}
+
+/***************************************************** section chat open  *****************************************************/
+.chat-open {
+    background-image: url(../img/mine.jpg);
+    height: calc(90vh - (76px + 60px));
+}
+
+.sent {
+    margin: 3px 0;
+    width: 40%;
+    background-color: #d5f9ba;
+    border-radius: 5px;
+    padding: 10px 10px;
+    align-self: flex-end;
+}
+
+.recived {
+    margin: 3px 0;
+    width: 40%;
+    background-color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.ov {
+    overflow: auto;
+}
+
+
+/**************************************************** message send bar  ****************************************************/
+
+.send-pic {
+    width: 10%;
+}
+
+.send-message {
+    width: 100%;
+}
+
+.message {
+    height: 80%;
+    width: 100%;
+    border: none;
 }
