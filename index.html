@@ -74,9 +74,10 @@
 
                     <!-- section messaggi-list-chat  -->
                     <section class="message-list text-overflow">
-                        <div class="p-2 d-flex justify-content-between border-bottom"
-                            v-for="(contact, index) in contacts" @click="openChat(index)">
-                            <div class="d-flex">
+                        <div class="single-contact p-2 d-flex justify-content-between border-bottom"
+                            v-for="(contact, index) in contacts" @click="openChat(index)"
+                            :class="(index == activeChat) ? 'active':''">
+                            <div class="chat-selection d-flex">
                                 <div class="avatar w-15">
                                     <img :src="'../img/avatar'+(contact.avatar)+'.jpg'" class="img-fluid img-chat"
                                         alt="#">
@@ -101,14 +102,14 @@
                 <div class="col-8 p-0">
                     <!-- section chat-img  -->
                     <section class="bg-personal p-2 d-flex justify-content-between">
-                        <div class="avatar h-alt d-flex">
+                        <div class="h-alt d-flex">
                             <div class="avatar">
-                                <img :src="'../img/avatar'+(contacts[0].avatar)+'.jpg'"
+                                <img :src="'../img/avatar'+(contacts[activeChat].avatar)+'.jpg'"
                                     class="img-fluid img-chat chat-avatar-img" alt="#">
                             </div>
                             <div class="px-3">
                                 <h3 class="m-0 fs-4">
-                                    {{contacts[0].name}}
+                                    {{contacts[activeChat].name}}
                                 </h3>
                                 <div class="text-secondary fs-6">
                                     Ultimo Messaggio inviato
