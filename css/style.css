@@ -118,7 +118,7 @@ body {
 
 /* text overflow */
 .text-overflow {
-    height: calc(90vh - 214px);
+    height: calc(90vh - (76px + 80px + 54px));
     overflow: auto;
 }
 

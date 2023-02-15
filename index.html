@@ -72,16 +72,17 @@
                         </div>
                     </section>
 
-                    <!-- section messaggi-list  -->
-                    <section class="message text-overflow ">
-                        <div class="p-2 d-flex justify-content-between border-bottom">
+                    <!-- section messaggi-list-chat  -->
+                    <section class="message-list text-overflow">
+                        <div class="p-2 d-flex justify-content-between border-bottom" v-for="(contact) in contacts">
                             <div class="d-flex">
                                 <div class="avatar w-15">
-                                    <img src="./img/avatar_io.jpg" class="img-fluid img-chat" alt="#">
+                                    <img :src="'../img/avatar'+(contact.avatar)+'.jpg'" class="img-fluid img-chat"
+                                        alt="#">
                                 </div>
                                 <div class="px-3">
-                                    <h3 class="m-0">
-                                        Sofia
+                                    <h3 class="m-0 fs-5">
+                                        {{contact.name}}
                                     </h3>
                                     <div class="text-secondary">
                                         Ultimo Messaggio inviato
