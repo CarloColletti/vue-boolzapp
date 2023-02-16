@@ -212,12 +212,31 @@ createApp({
             ],
 
             activeChat: 0,
+            newMessage: {
+                date: '11/01/2020 16:15:22',
+                text_mess: '',
+                status: 'sent'
+            }
         }
     },
 
     methods: {
         openChat(i) {
             this.activeChat = i;
+        },
+
+        sent_message() {
+            this.contacts[this.activeChat].messages.push({
+                ...this.newMessage,
+            });
+
+            setTimeout(() => {
+                this.contacts[this.activeChat].messages.push({
+                    date: '12/01/2020 16:15:22',
+                    text_mess: 'OK!!!!!!',
+                    status: 'received',
+                });
+            }, 1000);
         }
     },
 

@@ -139,7 +139,8 @@
                         </div>
 
                         <div class="send-message d-flex justify-content-center align-items-center">
-                            <input type="text" class="rounded message" placeholder="Scrivi un Messaggio">
+                            <input type="text" v-model="newMessage.text_mess" @keyUp.enter="sent_message()"
+                                class="rounded message" placeholder="Scrivi un Messaggio">
                         </div>
 
                         <div class="send-pic d-flex justify-content-center align-items-center">
