@@ -86,7 +86,7 @@
                                     <h3 class="m-0 fs-5">
                                         {{contact.name}}
                                     </h3>
-                                    <div class="text-secondary">
+                                    <div class="text-secondary" v-if:="contact.messages.length">
                                         {{contact.messages[ contact.messages.length -1 ].text_mess}}
                                     </div>
                                 </div>
