@@ -70,31 +70,34 @@
                             </button>
                             <input type="text" class="form-control" placeholder="Cerca e inizia una nuova chat"
                                 aria-label="Example text with button addon" aria-describedby="button-addon1"
-                                v-model="search" @keyUp="foundContact()">
+                                v-model="search">
                         </div>
                     </section>
 
                     <!-- section messaggi-list-chat  -->
                     <section class="message-list text-overflow">
-                        <div class="single-contact p-2 d-flex justify-content-between border-bottom"
-                            v-for="(contact, index) in contacts" v-show="contact.visible" @click="openChat(index)"
+                        <div class="single-contact p-2 border-bottom" v-for="(contact, index) in contacts"
+                            v-show="contact.name.toLowerCase().includes(search.toLowerCase())" @click="openChat(index)"
                             :class="(index == activeChat) ? 'active':''">
-                            <div class="chat-selection d-flex">
-                                <div class="avatar w-15">
-                                    <img :src="'./img/avatar'+(contact.avatar)+'.jpg'" class="img-fluid img-chat"
-                                        alt="#">
-                                </div>
-                                <div class="px-3">
-                                    <h3 class="m-0 fs-5">
-                                        {{contact.name}}
-                                    </h3>
-                                    <div class="text-secondary" v-if:="contact.messages.length">
-                                        {{contact.messages[ contact.messages.length -1 ].text_mess}}
+                            <div class="d-flex justify-content-between">
+                                <div class="chat-selection d-flex">
+                                    <div class="avatar w-15">
+                                        <img :src="'./img/avatar'+(contact.avatar)+'.jpg'" class="img-fluid img-chat"
+                                            alt="#">
+                                    </div>
+                                    <div class="px-3">
+                                        <h3 class="m-0 fs-5">
+                                            {{contact.name}}
+                                        </h3>
+                                        <div class="text-secondary" v-if:="contact.messages.length">
+                                            {{contact.messages[ contact.messages.length -1 ].text_mess}}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="text-secondary h-alt">
-                                <span>12.00</span>
+                                <div class="text-secondary h-alt">
+                                    <span>12.00</span>
+                                </div>
+
                             </div>
                         </div>
                     </section>

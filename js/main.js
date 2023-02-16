@@ -241,16 +241,16 @@ createApp({
             }, 1000);
         },
 
-        cerca() {
-            for (const contact of this.contacts) {
-                if (!contact.name.toLowerCase().includes(this.search.toLowerCase())) {
-                    contact.visible = false;
-                } else {
-                    contact.visible = true;
-                }
+        // cerca() {
+        //     for (const contact of this.contacts) {
+        //         if (!contact.name.toLowerCase().includes(this.search.toLowerCase())) {
+        //             contact.visible = false;
+        //         } else {
+        //             contact.visible = true;
+        //         }
 
-            }
-        },
+        //     }
+        // },
     },
 
 }).mount('#app')
