@@ -20,7 +20,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- VUE LINK!!! -->
-    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>ù -->
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.global.min.js"></script>
 
     <!-- custom javascript  -->
@@ -77,11 +77,11 @@
                     <!-- section messaggi-list-chat  -->
                     <section class="message-list text-overflow">
                         <div class="single-contact p-2 d-flex justify-content-between border-bottom"
-                            v-for="(contact, index) in contacts" @click="openChat(index)"
-                            :class="(index == activeChat) ? 'active':''" v-show="contact.visible">
+                            v-for="(contact, index) in contacts" v-show="contact.visible" @click="openChat(index)"
+                            :class="(index == activeChat) ? 'active':''">
                             <div class="chat-selection d-flex">
                                 <div class="avatar w-15">
-                                    <img :src="'../img/avatar'+(contact.avatar)+'.jpg'" class="img-fluid img-chat"
+                                    <img :src="'./img/avatar'+(contact.avatar)+'.jpg'" class="img-fluid img-chat"
                                         alt="#">
                                 </div>
                                 <div class="px-3">
@@ -106,7 +106,7 @@
                     <section class="bg-personal p-2 d-flex justify-content-between">
                         <div class="h-alt d-flex">
                             <div class="avatar">
-                                <img :src="'../img/avatar'+(contacts[activeChat].avatar)+'.jpg'"
+                                <img :src="'./img/avatar'+(contacts[activeChat].avatar)+'.jpg'"
                                     class="img-fluid img-chat chat-avatar-img" alt="#">
                             </div>
                             <div class="px-3">

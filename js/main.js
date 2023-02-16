@@ -241,7 +241,7 @@ createApp({
             }, 1000);
         },
 
-        foundContact() {
+        cerca() {
             for (const contact of this.contacts) {
                 if (!contact.name.toLowerCase().includes(this.search.toLowerCase())) {
                     contact.visible = false;
