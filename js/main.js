@@ -230,6 +230,8 @@ createApp({
                 ...this.newMessage,
             });
 
+            this.newMessage.text_mess = '';
+
             setTimeout(() => {
                 this.contacts[this.activeChat].messages.push({
                     date: '12/01/2020 16:15:22',
