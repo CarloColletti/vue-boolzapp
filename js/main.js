@@ -210,7 +210,7 @@ createApp({
                     ],
                 }
             ],
-
+            search: '',
             activeChat: 0,
             newMessage: {
                 date: '11/01/2020 16:15:22',
