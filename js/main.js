@@ -239,7 +239,18 @@ createApp({
                     status: 'received',
                 });
             }, 1000);
-        }
+        },
+
+        foundContact() {
+            for (const contact of this.contacts) {
+                if (!contact.name.toLowerCase().includes(this.search.toLowerCase())) {
+                    contact.visible = false;
+                } else {
+                    contact.visible = true;
+                }
+
+            }
+        },
     },
 
 }).mount('#app')
